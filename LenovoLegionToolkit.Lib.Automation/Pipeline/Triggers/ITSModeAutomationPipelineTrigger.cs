@@ -11,7 +11,7 @@ public class ITSModeAutomationPipelineTrigger(ITSMode powerModeState) : IITSMode
 {
     public string DisplayName => Resource.ITSModeAutomationPipelineTrigger_DisplayName;
 
-    public ITSMode ITSModeState { get; } = powerModeState;
+     public ITSMode ITSModeState { get; } = ITSModeState;
 
     public Task<bool> IsMatchingEvent(IAutomationEvent automationEvent)
     {
